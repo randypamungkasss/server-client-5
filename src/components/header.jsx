@@ -9,11 +9,11 @@ export const Header = () => {
           <a href="/" className="hover:text-gray-200">
             Home
           </a>
-          <a href="/about" className="hover:text-gray-200">
-            About
+          <a href="/favcolor" className="hover:text-gray-200">
+            FavColor
           </a>
-          <a href="/services" className="hover:text-gray-200">
-            Services
+          <a href="/sneakers" className="hover:text-gray-200">
+            Sneakers
           </a>
           <a href="/contact" className="hover:text-gray-200">
             Contact
