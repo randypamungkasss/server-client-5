@@ -4,10 +4,19 @@
 
 @layer base {
   input {
-    @apply w-[400px] px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white text-gray-700 placeholder-gray-400;
+    @apply w-[400px] rounded-lg border bg-white px-4 py-3 text-gray-700 placeholder-gray-400 shadow-sm transition-all duration-300 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500;
   }
 
   button {
-    @apply w-fit font-medium text-white px-4 py-2 rounded-lg shadow-sm bg-blue-400;
+    @apply w-fit rounded-lg bg-blue-600 px-4 py-3 font-medium text-white shadow-sm;
+  }
+
+  @layer components {
+    .btn-primary {
+      @apply w-full rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white shadow-md transition duration-300 ease-in-out hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50;
+    }
+    .btn-secondary {
+      @apply w-full rounded-lg border border-gray-300 bg-gray-100 px-4 py-2 font-semibold text-gray-700 transition duration-300 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50;
+    }
   }
 }
